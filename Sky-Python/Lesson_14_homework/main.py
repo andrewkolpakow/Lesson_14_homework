@@ -15,19 +15,19 @@ def movie_by_years(year_start,year_end):
 
 
 @app.route("/rating/children")
-def movie_by_rating():
+def movie_for_children():
     movies = get_movies_for_children()
     return jsonify(movies)
 
 
 @app.route("/rating/family")
-def movie_by_rating():
+def movie_for_family():
     movies = get_movies_for_family()
     return jsonify(movies)
 
 
 @app.route("/rating/adults")
-def movie_by_rating():
+def movie_for_adults():
     movies = get_movies_for_adults()
     return jsonify(movies)
 
